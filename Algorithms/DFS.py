@@ -51,7 +51,7 @@ class DFS(Search_Algorithm):
             x, y = self.get_empty_tile_location(current_state)
 
             # Try all four possible moves
-            for move in range(4):
+            for move in reversed(range(4)):
                 # Skip invalid moves
                 if not self.is_valid_move(x, y, move):
                     continue
